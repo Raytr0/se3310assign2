@@ -6,8 +6,9 @@ digraph NFA {
     t6 [shape=doublecircle]
     node [shape = circle];
     t0 -> t1;
-    t1 -> t2 [label = "a"];
     t0 -> t3;
+    t1 -> t7 [label = "a"];
+    t7 -> t2 [label = ""];
     t3 -> t4 [label = "b"];
     t4 -> t3 [label = ""];
     t4 -> t2 [label = ""];
