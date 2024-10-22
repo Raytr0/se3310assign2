@@ -1,4 +1,4 @@
-digraph NFA {
+digraph {
     fake [style = invisible]
     t0 [root = true, shape = circle]
     fake -> t0 [style = bold]
