@@ -1,24 +1,13 @@
-digraph NFA {
+digraph {
     fake [style = invisible]
     t0 [root = true, shape = circle]
     fake -> t0 [style = bold]
-
-    t11 [shape=doublecircle]
+    t2 [shape=doublecircle]
     node [shape = circle];
-    t0 -> t1;
-    t1 -> t7 [label = "a"];
-    t7 -> t2 [label = ""];
-    t0 -> t3;
-    t3 -> t4 [label = "b"];
-    t4 -> t3 [label = ""];
-    t4 -> t2 [label = ""];
-    t3 -> t2 [label = ""];
-    t2 -> t5 [label = "a"];
-    t5 -> t6 [label = ""];
-    t6 -> t8 [label = "a"];
-    t8 -> t6 [label = ""];
-    t8 -> t9 [label = "b"];
-    t9 -> t10 [label = ""];
-    t10 -> t11 [label = "b"];
-    t11 -> t10 [label = ""];
+
+    t0 -> t1 [label="a"];
+    t0 -> t0 [label="b"];
+    t1 -> t1 [label="a"];
+    t1 -> t2 [label="b"];
+    t2 -> t2 [label="b"];
 }
